@@ -59,6 +59,14 @@
 //console.log(x)
 // console.log(null)
 
+// 5 приоритет операторов
+//const  fullAge = 25
+//const birthYear = 1997
+//const currentYear = 2022
+
+//const isFullAge = currentYear - birthYear >= fullAge //
+//console.log(isFullAge)
+
 
 
 
