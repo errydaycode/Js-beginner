@@ -94,32 +94,53 @@
 //console.log( num1 === num2)
 
 // 7 Булевая логика
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#логические_операторы
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#логические_операторы
 
 
 // 8 функции
 
 
-function calculateAge(year) {
-    return 2022 - year
-}
+//function calculateAge(year) {
+ //   return 2022 - year
+//}
 
 //console.log(calculateAge(1993))
 //console.log(calculateAge(1999))
 //console.log(calculateAge(1997))
 
-function logInfoAbout (name, year) {
-    const age = calculateAge(year)
+//function logInfoAbout (name, year) {
+    //const age = calculateAge(year)
 
-    if (age > 0) {
-        console.log('Человек по имени ' + name + ' Сейчас имеет возраст ' + age )
-    } else {
-        console.log('Вообще-то это уже будущее!')
-    }
+   // if (age > 0) {
+    //    console.log('Человек по имени ' + name + ' Сейчас имеет возраст ' + age )
+   // } else {
+  //      console.log('Вообще-то это уже будущее!')
+  //  }
+
+    //logInfoAbout('Георгий' , '1997')
+//logInfoAbout('Елена' , '1993')
+//logInfoAbout('Елена' , '2043')
+//}
+
+// 9 Массивы
+
+ const cars = ['Мазда', 'Мерседес' , 'Форд']
+// console.log(cars)
+
+//const cars = new Array('Мазда', 'Мерседес' , 'Форд')
+ console.log(cars.length)
+
+console.log(cars[1])
+console.log(cars[0])
+console.log(cars[2])
+
+cars[0] = 'Porsche'
+cars[cars.length] = 'Mazda'
+console.log(cars)
 
 
-}
 
-logInfoAbout('Георгий' , '1997')
-logInfoAbout('Елена' , '1993')
-logInfoAbout('Елена' , '2043')
+
+
+
+
