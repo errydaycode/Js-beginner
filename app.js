@@ -67,6 +67,59 @@
 //const isFullAge = currentYear - birthYear >= fullAge //
 //console.log(isFullAge)
 
+// 6 Условные операторы
+//const courseStatus = 'fail' // ready, fail, pending
+
+//if (courseStatus ==='ready') {
+ //   console.log ( 'Курс уже готов и его можно проходить')
+//} else if(courseStatus ==='pending') {
+  //  console.log ( 'Курс пока находится в процессе разработки')
+//} else {
+  //  console.log('Курс не получился')
+//}
+
+//const isReady = true
+
+//if (isReady) {
+  //  console.log('Всё готово!')
+//} else {
+  //  console.log('Всё не готово!')
+//}
+// Тернарное выражение
+// isReady ? console.log('Всё готово!') : console.log('Всё не готово!')
+
+//const num1 = 42 // number
+//const num2=  '42' // string
+
+//console.log( num1 === num2)
+
+// 7 Булевая логика
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#логические_операторы
 
 
+// 8 функции
 
+
+function calculateAge(year) {
+    return 2022 - year
+}
+
+//console.log(calculateAge(1993))
+//console.log(calculateAge(1999))
+//console.log(calculateAge(1997))
+
+function logInfoAbout (name, year) {
+    const age = calculateAge(year)
+
+    if (age > 0) {
+        console.log('Человек по имени ' + name + ' Сейчас имеет возраст ' + age )
+    } else {
+        console.log('Вообще-то это уже будущее!')
+    }
+
+
+}
+
+logInfoAbout('Георгий' , '1997')
+logInfoAbout('Елена' , '1993')
+logInfoAbout('Елена' , '2043')
