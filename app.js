@@ -99,36 +99,37 @@
 
 // 8 функции
 
+/*
+function calculateAge(year) {
+   return 2022 - year
+}
 
-//function calculateAge(year) {
- //   return 2022 - year
-//}
+console.log(calculateAge(1993))
+console.log(calculateAge(1999))
+console.log(calculateAge(1997))
 
-//console.log(calculateAge(1993))
-//console.log(calculateAge(1999))
-//console.log(calculateAge(1997))
+function logInfoAbout (name, year) {
+    const age = calculateAge(year)
 
-//function logInfoAbout (name, year) {
-    //const age = calculateAge(year)
+    if (age > 0) {
+        console.log('Человек по имени ' + name + ' Сейчас имеет возраст ' + age )
+    } else {
+        console.log('Вообще-то это уже будущее!')
+    }
 
-   // if (age > 0) {
-    //    console.log('Человек по имени ' + name + ' Сейчас имеет возраст ' + age )
-   // } else {
-  //      console.log('Вообще-то это уже будущее!')
-  //  }
-
-    //logInfoAbout('Георгий' , '1997')
-//logInfoAbout('Елена' , '1993')
-//logInfoAbout('Елена' , '2043')
-//}
+    logInfoAbout('Георгий' , '1997')
+logInfoAbout('Елена' , '1993')
+logInfoAbout('Елена' , '2043')
+}
+*/
 
 // 9 Массивы
-
+/*
  const cars = ['Мазда', 'Мерседес' , 'Форд']
 // console.log(cars)
 
 //const cars = new Array('Мазда', 'Мерседес' , 'Форд')
- console.log(cars.length)
+  console.log(cars.length)
 
 console.log(cars[1])
 console.log(cars[0])
@@ -137,6 +138,27 @@ console.log(cars[2])
 cars[0] = 'Porsche'
 cars[cars.length] = 'Mazda'
 console.log(cars)
+*/
+
+
+// 10 циклы
+/*
+   const cars = ['Мазда', 'Мерседес' , 'Форд', 'Porsche']
+
+    for ( let i = 0; i < cars.length; i++) {
+        const car = cars[i]
+        console.log(car)
+    }
+
+for ( let car of cars) {
+    console.log(car)
+}
+
+*/
+
+//
+
+
 
 
 
