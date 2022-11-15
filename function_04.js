@@ -67,4 +67,15 @@ function sumAll(...all) {
 const res = sumAll(1,2,3,4,5,7)
 console.log(res)
 
-// 5
+// 5 Замыкания
+
+function createMember(name) {
+    return function (lastName) {
+        console.log(name + lastName)
+    }
+}
+
+const logWithLastName = createMember('gerry')
+console.log(logWithLastName('Listopad'))
+console.log(logWithLastName('smith'))
+
