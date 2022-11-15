@@ -18,7 +18,8 @@
 
 //console.dir(greet) Функкции - объекты
 
-// Анонимные функции
+// 2 Анонимные функции
+/*
 let counter = 0
 const interval = setInterval(function (){
     if (counter === 5) {
@@ -28,3 +29,23 @@ const interval = setInterval(function (){
     }
 }, 1000)
 
+*/
+
+// 3 Стрелочные функции
+
+function greet(name) {
+ console.log('Привет - ', name)
+}
+
+const arrow = (name, count ) => {
+    console.log('Привет - ', name, 'Ты соснул аж', count , 'хуев' )
+}
+
+arrow('Жора', 25)
+const arrow2 = name => console.log('Привет - ', name)
+
+arrow2('HuesosikK')
+
+const  pow2 = num =>  num ** 2
+
+console.log(pow2(5))
