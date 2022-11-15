@@ -33,7 +33,7 @@ const interval = setInterval(function (){
 
 // 3 Стрелочные функции
 
-function greet(name) {
+/* function greet(name) {
  console.log('Привет - ', name)
 }
 
@@ -49,3 +49,22 @@ arrow2('HuesosikK')
 const  pow2 = num =>  num ** 2
 
 console.log(pow2(5))
+
+
+ */
+
+// 4 Параметры по умолчанию
+
+//const sum = (a = 40, b = a * 2) => a +b
+
+function sumAll(...all) {
+    let  result = 0
+        for ( let num of all) {
+        result += num
+                                }
+            return result
+                        }
+const res = sumAll(1,2,3,4,5,7)
+console.log(res)
+
+// 5
