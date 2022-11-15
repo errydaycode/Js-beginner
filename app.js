@@ -1,33 +1,65 @@
-//const name = 'Георгий'
-
-//const age = 25
-//function getAge () {
-  //  return age
+// 1 Функции
+// Function Declaration
+//function greet(name) {
+  //  console.log('Привет - ', name)
 // }
+// Function Expression
+//const greet2 = function greet2(name) {
+   // console.log('Привет 2 - ', name)
+//}
+//greet('Аня')
+//greet2('Аня')
 
-// const output = 'Привет, меня зовут ' + name + ' и мой возраст ' + age + 'лет.'
-//const output = `Привет, меня зовут ${name} и мой возраст ${age < 20 ? 'A' : 'B'} лет.`
+//console.log(typeof greet)
 
-// console.log(output)
+//console.dir(greet)
 
-// const output = ` <div>This is div </div>
- //<p>This is p</p> `
-// console.log(output)
+// 2 Анонимные функции
+//let counter = 0
+//const interval = setInterval(function (){
+   // if (counter === 5) {
+  //      clearInterval(interval) // clearTimeout
+  //  } else {
+     //   console.log(++counter)
+   // }
 
-const name = 'Георгий Леонидыч'
-/*
-console.log(name.length)
-console.log(name.toUpperCase())
-console.log(name.toLowerCase())
-console.log(name.charAt(2))
-console.log(name.indexOf('нид'))
-console.log(name.toLowerCase().startsWith('гео'))
-console.log(name.startsWith('Гео'))
-console.log(name.endsWith('ыч'))
-console.log(name.repeat(2))
-const string = '    password   '
-console.log(string.trim())
-console.log(string.trimLeft())
+//}, 1000)
 
-*/
+// 3 Стрелочные функции
 
+//function greet(name) {
+    //console.log('Привет - ', name)
+//}
+
+//const arrow = (name, age) => {
+  // console.log('Привет - ', name, '!' , 'ты живешь уже' , age ,'лет')
+//}
+//const arrow2 = name => console.log('Привет - ', name)
+//
+//arrow2('Vladilen')
+
+//const pow2 = num => num **2
+
+///arrow('Жорик', 25)
+
+//console.log(pow2(5))
+
+// 4 Параметры по умолчанию
+
+const sum = (a = 40, b = a * 2) => a+b
+
+console.log(sum(41, 4 ))
+
+console.log(sum())
+
+function sumAll(...all) {
+    let result = 0
+    for ( let num of all) {
+        result += num
+    }
+    return result
+}
+const res = sumAll(1,2,3,4,5,6,7)
+console.log(res)
+
+// 5
